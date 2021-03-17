@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,4 +8,25 @@
 body {
     background-color: #2f2a49;
     color: #fff;
+} */
+
+#fare {
+    display: none;
+}
+
+#inputEdit {
+    display: none;
+}
+
+#modFinita {
+    display: none;
+}
+
+.new-task {
+    display: flex;
+}
+
+.fatto {
+    text-decoration: line-through;
+    opacity: 0.5;
 }
