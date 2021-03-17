@@ -1,4 +1,4 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,9 +6,17 @@
 }
 
 body {
-    background-color: #2f2a49;
+    background-color: #133932;
     color: #fff;
-} */
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
 
 #fare {
     display: none;
@@ -30,3 +38,56 @@ body {
     text-decoration: line-through;
     opacity: 0.5;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.content {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #11332d, #143d36);
+    box-shadow:  20px 20px 60px #10302b,
+             -20px -20px 60px #16423a;
+    padding: 60px;
+    width: 600px;
+}
+
+.int {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.aggiungi {
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background-color: #1a4d44;
+    color: #fff;
+    padding: 0 10px;
+    background: #133932;
+box-shadow: inset 10px 10px 19px #10302b,
+            inset -10px -10px 19px #16423a;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.2;
+
+}
+
