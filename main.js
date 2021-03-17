@@ -1,6 +1,9 @@
 $(document).ready(function () {
 
+
+    
     $('#add').click(function () {
+
         var inserisci = $('#inserisci').val();
         $('#inserisci').val("")
 
