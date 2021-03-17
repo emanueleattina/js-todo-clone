@@ -1,17 +1,15 @@
 $(document).ready(function () {
 
-
-    
     $('#add').click(function () {
-
         var inserisci = $('#inserisci').val();
-        $('#inserisci').val("")
+        $('#inserisci').val("");
 
         var template = $('#fare .new-task').clone();
         template.children('h3.task').text(inserisci);
 
         template.children('#fatto').click(function () {
-            $(this).siblings('.task').addClass('fatto')
+            $(this).siblings('.task').addClass('fatto');
+            console.log('s');
 
         });
 
@@ -37,8 +35,6 @@ $(document).ready(function () {
 
             $(this).siblings('#fatto').show();
             $(this).siblings('#edit').show();
-            
-
         });
 
         $('#daFare').append(template);
@@ -49,5 +45,23 @@ $(document).ready(function () {
 
 
 
+
+
+
+    $('#inserisci').keyup(function (e) {
+
+        if (e.which == 13) {
+            var inserisci = $('#inserisci').val();
+            $('#inserisci').val("")
+
+            var template = $('#fare .new-task').clone();
+            template.children('h3.task').text(inserisci);
+
+            template.children('#fatto').click(function () {
+                $(this).siblings('.task').addClass('fatto');
+            });
+        }
+        $('#daFare').append(template);
+    });
 
 });
